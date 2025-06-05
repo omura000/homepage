@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
+
+html {
+    scroll-behavior: smooth;
+    font-family: "Noto Sans JP", sans-serif;
+}
+
+body {
+    margin: 0 auto;
+    min-width: 375px;
+    max-width: 1920px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #4d6176;
+    height: 130px;
+    padding: 0 20px;
+    color: white;
+    z-index: 10;
+}
+
+header .aicon {
+    width: 100px;
+    height: 100px;
+}
+
+header h1 {
+    font-size: 2em;
+    margin: 0 20px;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+    text-underline-offset: 8px;
+}
+
+section {
+    padding: 100px 20px;
+}
+
+.sub {
+    background-color: #4d6176;
+    color: white;
+    padding: 20px;
+    font-size: 24px;
+    width: fit-content;
+}
+
+.self-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+.self-area img {
+    width: 300px;
+    height: auto;
+    border: 3px solid #4d6176;
+}
+
+.intor {
+    max-width: 500px;
+}
+
+.intor .name {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.worktitle {
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    margin: 20px 0 10px;
+}
+
+.details {
+    font-size: 16px;
+    padding: 0 20px;
+}
+
+.time {
+    margin-top: 10px;
+    font-style: italic;
+}
+
+.ai, .ae {
+    margin-top: 50px;
+}
+
+.skillname {
+    background-color: #dfd892;
+    color: #4d6176;
+    padding: 10px 20px;
+    font-size: 20px;
+    width: fit-content;
+    border-radius: 10px;
+}
+
+.aiflex01 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.ai01, .ai02 {
+    border: 3px solid #4d6176;
+    width: 400px;
+    padding-bottom: 20px;
+}
+
+.ai01 img, .ai02 img {
+    width: 100%;
+    height: auto;
+}
+
+.ae01, .unity01 {
+    border: 3px solid #4d6176;
+    margin: 40px auto;
+    padding: 20px;
+    max-width: 700px;
+    text-align: center;
+}
+
+.ae01 video, .unity01 video {
+    width: 100%;
+    max-width: 500px;
+}
+
+footer {
+    background-color: #4d6176;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+    header nav {
+        display: none;
+    }
+
+    .self-area {
+        flex-direction: column;
+    }
+
+    .self-area img, .intor {
+        width: 90%;
+    }
+
+    .aiflex01 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ai01, .ai02 {
+        width: 90%;
+    }
+
+    .ae01, .unity01 {
+        width: 90%;
+    }
+}
